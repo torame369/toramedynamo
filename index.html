@@ -33,6 +33,32 @@
     transform: translateX(0px); 
   }
 }
+body {
+      overflow-x: hidden;
+    }
+
+  /* Your signature half-pink diagonal background */
+  .half-pink-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust this to make it wider/skinnier */
+    height: 100%;
+    background-color: #ec4899; /* This is pink-500 */
+    z-index: -1;
+    /* This creates the diagonal cut */
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  /* Mobile fix: makes the pink background go to the bottom instead of the side */
+  @media (max-width: 768px) {
+    .half-pink-bg {
+      width: 100%;
+      height: 50%;
+      top: 50%;
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
 </style>
 
   <!-- Diagonal background -->
