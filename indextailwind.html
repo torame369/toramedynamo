@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DataDynamos Flower Shop | Events & Creativity</title>
+  
+  <meta name="description" content="DataDynamos Flower Shop brings flowers, events, and creativity together. Chat with us on Telegram for custom requests!">
+  <meta name="keywords" content="flowers, event planning, DataDynamos, flower shop">
+  <meta name="author" content="Vannak">
+
+  <meta property="og:title" content="DataDynamos Flower Shop">
+  <meta property="og:description" content="Beautiful flowers and creative event planning.">
+  <meta property="og:image" content="link-to-your-logo.jpg">
+  <meta property="og:url" content="http://yourdomain.com">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="font-sans bg-white relative flex flex-col min-h-screen">
+
+<style>
+@keyframes talk {
+  0%, 10%, 90%, 100% { 
+    opacity: 0; 
+    transform: translateX(20px); 
+  }
+  20%, 80% { 
+    opacity: 1; 
+    transform: translateX(0px); 
+  }
+}
+</style>
+
+  <!-- Diagonal background -->
+  <div class="bg-diagonal fixed inset-0 -z-10"></div>
+
+  <!-- Header -->
+    <header class="bg-white border-b-4 border-pink-500 p-4 flex justify-between items-center sticky top-0 z-50">
+    <div class="text-pink-500 font-bold text-2xl">DataDynamos</div>
+    
+    <nav class="hidden lg:flex space-x-2 lg:space-x-4 main-nav">
+        <a href="#home" class="px-3 py-2 rounded-md font-bold text-pink-500 hover:bg-pink-500 hover:text-white transition duration-300">Home</a>
+        <a href="#about" class="px-3 py-2 rounded-md font-bold text-pink-500 hover:bg-pink-500 hover:text-white transition duration-300">About Us</a>
+        <a href="#gallery" class="px-3 py-2 rounded-md font-bold text-pink-500 hover:bg-pink-500 hover:text-white transition duration-300">Gallery</a>
+        <a href="#promotions" class="px-3 py-2 rounded-md font-bold text-pink-500 hover:bg-pink-500 hover:text-white transition duration-300">Promotions</a>
+        <a href="#portfolio" class="px-3 py-2 rounded-md font-bold text-pink-500 hover:bg-pink-500 hover:text-white transition duration-300">Portfolio</a>
+        <a href="#contact" class="px-3 py-2 rounded-md font-bold text-pink-500 hover:bg-pink-500 hover:text-white transition duration-300">Contact</a>
+    </nav>
+
+    <button class="menu-toggle lg:hidden text-pink-600 font-bold text-2xl">☰ MENU</button>
+</header>
+
+  <!-- Sidebar -->
+  <nav class="sidebar fixed top-0 -left-64 w-64 h-full bg-gray-900 text-pink-400 p-4 flex-col transition-all duration-300 z-50">
+    <button class="close-btn text-pink-400 text-xl mb-4">✖</button>
+    <a href="#home" class="block py-2 hover:text-white">Home</a>
+    <a href="#about" class="block py-2 hover:text-white">About Us</a>
+    <a href="#gallery" class="block py-2 hover:text-white">Gallery</a>
+    <a href="#promotions" class="block py-2 hover:text-white">Promotions</a>
+    <a href="#portfolio" class="block py-2 hover:text-white">Portfolio</a>
+    <a href="#contact" class="block py-2 hover:text-white">Contact</a>
+</nav>
+
+  <main class="flex-grow">
+
+    <!-- Home -->
+    <section id="home" class="p-6 sm:p-10 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10 min-h-[70vh]">
+  
+  <div class="animate-fadeInUp text-pink-600 bg-white p-6 sm:p-10 rounded-xl border-2 border-pink-500 shadow-lg max-w-lg text-center lg:text-left order-2 lg:order-1">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        Welcome to DataDynamos
+      </h1>
+      <p class="text-base sm:text-lg lg:text-xl">
+        We bring flowers, events, and creativity together 🌸
+      </p>
+      
+      <a href="#gallery" class="inline-block mt-6 px-8 py-3 bg-pink-500 text-white rounded-lg font-semibold hover:bg-pink-600 transition shadow-md">
+        Explore Gallery
+      </a>
+  </div>
+
+  <div class="flex justify-center order-1 lg:order-2">
+      <div class="slideshow w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] rounded-full shadow-2xl overflow-hidden border-8 border-white">
+        <div class="slides"><img src="https://picsum.photos/400/400?random=1" class="w-full h-full object-cover"></div>
+        <div class="slides"><img src="https://picsum.photos/400/400?random=2" class="w-full h-full object-cover"></div>
+        <div class="slides"><img src="https://picsum.photos/400/400?random=3" class="w-full h-full object-cover"></div>
+      </div>
+  </div>
+</section>
+
+    <!-- About -->
+    <section id="about" class="p-6 bg-pink-100 rounded-lg shadow-md">
+  <h2 class="inline-block text-pink-600 font-bold bg-white px-4 py-2 border-4 border-pink-600 rounded-md mb-4">About Us</h2>
+  <div class="flex flex-col md:flex-row gap-6">
+    <div class="md:w-1/2 text-left space-y-4">
+      <p>Welcome to <strong>DataDynamos</strong> 🌸 We bring flowers, events, and creativity together.</p>
+      <p>Founded in 2020, based in Phnom Penh, we are a team of passionate creators who love blending technology with artistry.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:w-1/2">
+      <img src="https://picsum.photos/200/200?random=1" class="rounded shadow">
+      <img src="https://picsum.photos/200/200?random=2" class="rounded shadow">
+      <img src="https://picsum.photos/200/200?random=3" class="rounded shadow">
+      <img src="https://picsum.photos/200/200?random=4" class="rounded shadow">
+      <img src="https://picsum.photos/200/200?random=5" class="rounded shadow">
+      <img src="https://picsum.photos/200/200?random=6" class="rounded shadow">
+    </div>
+  </div>
+</section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="p-6">
+  <h2 class="inline-block text-pink-600 font-bold bg-white px-4 py-2 border-4 border-pink-600 rounded-md mb-4">Gallery</h2>
+  <div class="gallery grid grid-cols-2 md:grid-cols-5 gap-4">
+ 
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=1" alt="Red Rose" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Red Rose</h3>
+        <p class="text-pink-600">$10</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=2" alt="White Lily" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">White Lily</h3>
+        <p class="text-pink-600">$12</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=3" alt="Pink Tulip" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Pink Tulip</h3>
+        <p class="text-pink-600">$30</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=4" alt="Sunflower" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Sunflower</h3>
+        <p class="text-pink-600">$20</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=5" alt="Orchid" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Orchid</h3>
+        <p class="text-pink-600">$15</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=6" alt="Daisy" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Daisy</h3>
+        <p class="text-pink-600">$8</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>          
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=7" alt="Blue Hydrangea" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Blue Hydrangea</h3>
+        <p class="text-pink-600">$25</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=8" alt="Lavender" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Lavender</h3>
+        <p class="text-pink-600">$18</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=9" alt="Peony" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Peony</h3>
+        <p class="text-pink-600">$35</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="1">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=10" alt="Exotic Protea" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Exotic Protea</h3>
+        <p class="text-pink-600">$100</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="2">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=11" alt="Carnation" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Carnation</h3>
+        <p class="text-pink-600">$7</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="2">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=12" alt="Iris" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Iris</h3>
+        <p class="text-pink-600">$14</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="2">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=13" alt="Marigold" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Marigold</h3>
+        <p class="text-pink-600">$9</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="2">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=14" alt="Dahlia" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Dahlia</h3>
+        <p class="text-pink-600">$22</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    <div class="gallery-item bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col items-center" data-page="2">
+        <div class="flex items-center justify-center h-40 w-full">
+            <img src="https://picsum.photos/200/200?random=15" alt="Rainbow Bouquet" class="max-h-full max-w-full object-contain rounded-lg" />
+        </div>
+        <h3 class="font-bold mt-2">Rainbow Bouquet</h3>
+        <p class="text-pink-600">$120</p>
+        <a href="https://t.me/YourUsername?text=I%20want%20to%20order%20the%20Red%20Rose" 
+          target="_blank" 
+          class="mt-3 bg-pink-500 text-white text-xs px-4 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-1">
+          <span>Chat to Buy</span>
+        </a>  
+    </div>
+
+    </div>
+
+  <div class="pagination flex justify-center items-center space-x-2 mt-6 z-10">
+    </div>
+</section>
+
+    <!-- Promotions -->
+    <section id="promotions" class="p-6 bg-pink-50 rounded-lg shadow-md">
+  <h2 class="inline-block text-pink-600 font-bold bg-white px-4 py-2 border-4 border-pink-600 rounded-md mb-4">Special Offers</h2>
+  <div class="bg-white p-4 rounded shadow">
+    <h3 class="font-bold text-pink-600">🌸 Valentine’s Discount</h3>
+    <p>Get 20% off all roses until February 14th!</p>
+  </div>
+</section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="p-6">
+  <h2 class="inline-block text-pink-600 font-bold bg-white px-4 py-2 border-4 border-pink-600 rounded-md mb-4">Portfolio</h2>
+  
+  <div class="portfolio-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    
+<a href="project1.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col h-full w-full">
+  <img src="https://picsum.photos/300/200?random=11" class="rounded-lg mb-4 w-full h-48 object-cover">
+  
+  <div class="flex-grow w-full">
+    <h3 class="font-bold text-lg mb-1 text-pink-600">Grand Wedding</h3>
+    <p class="text-sm text-gray-700 leading-relaxed">
+      Luxury floral arrangements for a 500-guest event.
+    </p>
+  </div>
+</a>
+    <a href="project2.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col h-full">
+      <img src="https://picsum.photos/300/200?random=12" class="rounded mb-3 w-full h-48 object-cover">
+      <div class="flex-grow">
+        <h3 class="font-bold text-lg mb-1">Corporate Gala</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">Minimalist centerpieces for a tech conference.</p>
+      </div>
+    </a>
+
+    <a href="project3.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col h-full">
+      <img src="https://picsum.photos/300/200?random=13" class="rounded mb-3 w-full h-48 object-cover">
+      <div class="flex-grow">
+        <h3 class="font-bold text-lg mb-1">Birthday Garden Party</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">Bright, colorful seasonal bouquets for an outdoor party.</p>
+      </div>
+    </a>
+
+    <a href="project4.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col h-full">
+      <img src="https://picsum.photos/300/200?random=14" class="rounded mb-3 w-full h-48 object-cover">
+      <div class="flex-grow">
+        <h3 class="font-bold text-lg mb-1">Hotel Lobby Decor</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">Weekly fresh flower installations for luxury hotels.</p>
+      </div>
+    </a>
+
+    <a href="project5.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col h-full">
+      <img src="https://picsum.photos/300/200?random=15" class="rounded mb-3 w-full h-48 object-cover">
+      <div class="flex-grow">
+        <h3 class="font-bold text-lg mb-1">Bridal Bouquets</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">Custom hand-tied bouquets for modern brides.</p>
+      </div>
+    </a>
+
+    <a href="project6.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col h-full">
+      <img src="https://picsum.photos/300/200?random=16" class="rounded mb-3 w-full h-48 object-cover">
+      <div class="flex-grow">
+        <h3 class="font-bold text-lg mb-1">Anniversary Surprises</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">Romantic room decor and premium red rose boxes.</p>
+      </div>
+    </a>
+
+    <a href="project7.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition flex flex-col h-full">
+      <img src="https://picsum.photos/300/200?random=17" class="rounded mb-3 w-full h-48 object-cover">
+      <div class="flex-grow">
+        <h3 class="font-bold text-lg mb-1">Grand Opening Flowers</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">Congratulatory flower stands for new business launches.</p>
+      </div>
+    </a>
+    
+  </div>
+
+  <div class="pagination flex justify-center items-center space-x-2 mt-6 z-10"></div>
+</section>
+
+    <!-- Contact -->
+      <section id="contact" class="py-20 px-6 sm:px-10 bg-white">
+  <div class="mb-12">
+    <h2 class="inline-block text-pink-600 font-bold bg-white px-6 py-2 border-4 border-pink-600 rounded-md font-bold text-2xl text-pink-600 shadow-sm">
+      Contact Us
+    </h2>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-12 items-start">
+    
+    <div class="w-full lg:w-1/2 flex flex-col gap-8">
+      <div>
+        <h3 class="text-4xl font-bold text-pink-600 mb-4">Get in Touch</h3>
+        <p class="text-gray-600 mb-6">
+          Have a custom request or want to order? Chat with us directly on Telegram for the fastest response!
+        </p>
+
+        <a href="https://t.me/YourUsername" 
+           target="_blank" 
+           class="inline-flex items-center gap-3 bg-[#229ED9] text-white px-8 py-4 rounded-full font-bold text-lg shadow-[0_10px_20px_rgba(34,158,217,0.3)] hover:shadow-[0_15px_25px_rgba(34,158,217,0.4)] transform hover:-translate-y-1 transition-all duration-300 mb-8">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .33z"/>
+            </svg>
+            Send us a Message
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="https://facebook.com/example" class="flex items-center justify-center gap-3 bg-pink-50 border border-pink-100 p-3 rounded-xl shadow-sm hover:bg-pink-100 transition font-semibold text-gray-700">
+          <i class="fab fa-facebook text-blue-600 text-xl"></i> Facebook
+        </a>
+        <a href="https://instagram.com/example" class="flex items-center justify-center gap-3 bg-pink-50 border border-pink-100 p-3 rounded-xl shadow-sm hover:bg-pink-100 transition font-semibold text-gray-700">
+          <i class="fab fa-instagram text-pink-600 text-xl"></i> Instagram
+        </a>
+        <a href="mailto:info@dadana.net" class="flex items-center justify-center gap-3 bg-pink-50 border border-pink-100 p-3 rounded-xl shadow-sm hover:bg-pink-100 transition font-semibold text-gray-700">
+          <i class="fas fa-envelope text-pink-600 text-xl"></i> Email
+        </a>
+      </div>
+    </div>
+
+    <div class="w-full lg:w-1/2 h-full min-h-[350px]">
+      <div class="bg-pink-100 p-2 rounded-2xl shadow-inner h-full">
+        <iframe src="https://www.google.com/maps/embed?pb=..." 
+                class="w-full h-full min-h-[350px] rounded-xl shadow-md border-0" 
+                allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- Delivery Info -->
+    <section id="delivery-info" class="p-6 bg-pink-500 text-white rounded-lg shadow-md">
+  <h2 class="inline-block text-pink-600 font-bold bg-white text-pink-500 px-4 py-2 rounded-md mb-4">Delivery Information</h2>
+  <div class="space-y-4">
+    <div>
+      <h3 class="font-bold border-b border-white">Area of Delivery</h3>
+      <p>Phnom Penh area only</p>
+    </div>
+    <div>
+      <h3 class="font-bold border-b border-white">Date and Time</h3>
+      <p>Monday to Sunday (08:00AM to 05:00PM)</p>
+    </div>
+    <div>
+      <h3 class="font-bold border-b border-white">Same Day Delivery</h3>
+      <p>Cut-off time is 03:00PM, orders after will be delivered next day.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-pink-500 text-white p-6 border-white text-white p-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 footer-container">
+      <!-- Information -->
+      <div>
+        <h3 class="font-bold border-b-2 border-white mb-2">Information</h3>
+        <ul class="space-y-2">
+          <li><a href="#delivery-info" class="hover:text-black">Delivery Info</a></li>
+          <li><a href="#" class="hover:text-black">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-black">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <!-- Socials -->
+      <div>
+        <h3 class="font-bold border-b-2 border-white mb-2">Socials</h3>
+        <div class="flex space-x-4 justify-center md:justify-start mt-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-pink-500 to-yellow-400 text-white hover:opacity-80 transition">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-purple-600 text-white hover:bg-purple-700 transition">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+      </div>
+      <!-- Connect -->
+      <div>
+        <h3 class="font-bold border-b-2 border-white mb-2">Connect With Us</h3>
+        <form class="flex flex-col space-y-2">
+          <input type="email" placeholder="Email" class="p-2 rounded text-black" required />
+          <button class="bg-white text-pink-500 font-bold p-2 rounded hover:bg-pink-100">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center mt-4 border-t border-white pt-2 text-sm footer-bottom">
+      © 2026 DataDynamos, ALL RIGHTS RESERVED.<br>
+      Powered & Designed by TORAME
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+
+    <!-- Telegram Coner -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3 group">
+  <div id="chat-bubble" class="bg-white text-pink-600 border-2 border-pink-500 px-4 py-2 rounded-2xl rounded-br-none shadow-lg text-sm font-bold opacity-0 transition-all duration-500 translate-x-5 pointer-events-none">
+    <span id="chat-text">Chat to Buy! 🌸</span>
+  </div>
+
+  <a href="https://t.me/YourUsername" target="_blank" class="bg-[#229ED9] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition duration-300 relative shrink-0">
+     <span class="absolute inset-0 rounded-full bg-[#229ED9] opacity-75 animate-ping"></span>
+     <svg class="w-8 h-8 relative z-10" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .33z"/>
+     </svg>
+  </a>
+</div>
+
+</body>
+</html>
